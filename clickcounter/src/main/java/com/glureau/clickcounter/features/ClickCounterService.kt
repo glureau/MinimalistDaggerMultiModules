@@ -1,4 +1,4 @@
-package com.glureau.minimaldagger.features
+package com.glureau.clickcounter.features
 
 import javax.inject.Inject
 import javax.inject.Singleton

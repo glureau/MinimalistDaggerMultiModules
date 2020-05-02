@@ -1,2 +1,3 @@
 rootProject.name='MinimalDagger'
 include ':app'
+include ':clickcounter'

@@ -1,12 +1,12 @@
-package com.glureau.minimaldagger.ui
+package com.glureau.clickcounter.ui
 
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.glureau.minimaldagger.R
-import com.glureau.minimaldagger.di.injector
-import com.glureau.minimaldagger.features.ClickCounterService
+import com.glureau.clickcounter.R
+import com.glureau.clickcounter.di.clickCounterInjector
+import com.glureau.clickcounter.features.ClickCounterService
 import javax.inject.Inject
 
 class CounterFragment : Fragment(R.layout.fragment_counter) {
@@ -17,7 +17,7 @@ class CounterFragment : Fragment(R.layout.fragment_counter) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        injector.inject(this)
+        clickCounterInjector().inject(this)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
